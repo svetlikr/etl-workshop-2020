@@ -71,6 +71,26 @@ services:
     environment:
       - LP_ETL_DOMAIN
     restart: always
+    links:
+      - "fuseki:fuseki"
+  fuseki:
+    image: "linkedsolutions/fuseki"
+    ports:
+      - "3030:3030"
+    volumes:
+      - fuseki-storage:/fuseki/base
+    environment:
+      ADMIN_PASSWORD: pw123
+
+  silk:
+    image: silkframework/silk-workbench:latest
+    ports:
+      - "8888:80"
+    volumes:
+      - silk-storage:/opt/silk/workspace
+    links:
+      - "fuseki:fuseki"
+
 volumes:
   data-logs:
   data-execution:
@@ -80,6 +100,8 @@ volumes:
   #      device: /opt/lp/etl-docker/data
   #      o: bind
   data-storage:
+  fuseki-storage:
+  silk-storage:
   configuration:
     driver_opts:
       type: none
