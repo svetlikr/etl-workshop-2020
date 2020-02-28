@@ -37,3 +37,13 @@
 | ---------- | ------------ | ------------------- | ----------------- |
 | Type       | rdf:type     | schema:CreativeWork |                   |
 | Name       | schema:name  | Literal             | 670a              |
+
+## Test queries in Jena
+
+```
+SELECT * WHERE { GRAPH ?g{ ?s ?p ?o}} LIMIT 10
+```
+
+```
+SELECT * WHERE { GRAPH ?g {?s owl:sameAs ?o}} LIMIT 10
+```
