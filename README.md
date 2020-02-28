@@ -38,12 +38,13 @@
 | Type       | rdf:type     | schema:CreativeWork |                   |
 | Name       | schema:name  | Literal             | 670a              |
 
-## Test queries in Jena
+## How to
 
-```
-SELECT * WHERE { GRAPH ?g{ ?s ?p ?o}} LIMIT 10
-```
-
-```
-SELECT * WHERE { GRAPH ?g {?s owl:sameAs ?o}} LIMIT 10
-```
+1. Import `data/svkpk-workshop-pipeline.jsonld` to ETL running on `localhost:8080`
+2. Create `svkpk` dataset in Fuseki running on `localhost:3030`
+3. Execute pipeline
+4. Make sure that Fuseki loaded the data with `SELECT * WHERE { GRAPH ?g{ ?s ?p ?o}} LIMIT 10`
+5. Import `data/silk-project.zip` to SILK running on `localhost:8888`
+6. Open _Linking Task_ and _Generate Links_
+7. Execute task
+8. Validate changes in Fuseki dataset with `SELECT * WHERE { GRAPH ?g {?s owl:sameAs ?o}} LIMIT 10`
