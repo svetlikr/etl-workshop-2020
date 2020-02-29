@@ -43,7 +43,7 @@
 1. Import `data/svkpk-workshop-pipeline.jsonld` to ETL running on `localhost:8080`
 2. Create `svkpk` dataset in Fuseki running on `localhost:3030`
 3. Execute pipeline
-4. Make sure that Fuseki loaded the data with `SELECT * WHERE { GRAPH ?g{ ?s ?p ?o}} LIMIT 10`
+4. Make sure that data has been loaded to Fuseki with `SELECT * WHERE { GRAPH ?g{ ?s ?p ?o}} LIMIT 10`
 5. Import `data/silk-project.zip` to SILK running on `localhost:8888`
 6. Open _Linking Task_ and _Generate Links_
 7. Execute task
