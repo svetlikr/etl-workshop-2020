@@ -25,11 +25,12 @@
 
 ### Place
 
-| Field name | RDF property  | Expected value | Source MARC field |
-| ---------- | ------------- | -------------- | ----------------- |
-| Type       | rdf:type      | schema:Place   |                   |
-| Name       | schema:name   | Literal        | R02/R03           |
-| Same as    | schema:sameAs | URI            |                   |
+| Field name   | RDF property            | Expected value | Source MARC field |
+| ------------ | ----------------------- | -------------- | ----------------- |
+| Type         | rdf:type                | schema:Place   |                   |
+| Name         | schema:name             | Literal        | R02/R03m          |
+| Contained in | schema:containedInPlace | Literal        | R02/R03o          |
+| Same as      | schema:sameAs           | URI            |                   |
 
 ### Creative Work
 

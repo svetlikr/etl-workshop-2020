@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xsl:stylesheet version="2.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:fn="http://www.w3.org/2005/xpath-functions" xpath-default-namespace="http://www.loc.gov/MARC21/slim">
   <xsl:output method="text" version="1.0" encoding="UTF-8" indent="no"/>
-  <xsl:variable name="prefix">https://svkpk.cz/zdroj/regionální-osobnost/</xsl:variable>
+  <xsl:variable name="prefix">https://svkpk.cz/resource/</xsl:variable>
   <xsl:template match="/">@prefix adms:  &lt;http://www.w3.org/ns/adms#&gt; .
 @prefix rdf:  &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt; .
 @prefix rdfs:  &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .
@@ -16,6 +16,8 @@
 @prefix cpov: &lt;http://data.europa.eu/m8g/&gt; .
 @prefix locn: &lt;http://www.w3.org/ns/locn#&gt; .
 @prefix rov: &lt;http://www.w3.org/ns/regorg#&gt; .
+@prefix mads: &lt;http://www.loc.gov/mads/rdf/v1#&gt; .
+@prefix owl: &lt;http://www.w3.org/2002/07/owl#&gt; .
   
 <xsl:apply-templates/>
   </xsl:template>
@@ -23,17 +25,17 @@
     <xsl:apply-templates/>
   </xsl:template>
   <xsl:template match="record">
-    <xsl:variable name="entityIRI" select="concat($prefix,controlfield[@tag='001'])"/>
-    <xsl:variable name="birthPlaceIRI" select="concat($prefix,'místo/',replace(datafield[@tag='R02']/subfield[@code='m'],' ','%20'))"/>
-    <xsl:variable name="deathPlaceIRI" select="concat($prefix,'místo/',replace(datafield[@tag='R03']/subfield[@code='m'],' ','%20'))"/>
+    <xsl:variable name="personIRI" select="concat($prefix,'person/',controlfield[@tag='001'])"/>
+    <xsl:variable name="bithPlaceIRI" select="concat($prefix,'place/',replace(datafield[@tag='R02']/subfield[@code='m'],' ','%20'))"/>
+    <xsl:variable name="deathPlaceIRI" select="concat($prefix,'place/',replace(datafield[@tag='R03']/subfield[@code='m'],' ','%20'))"/>
     
     <xsl:call-template name="OUTPUT_TYPE_TRIPLE">
-      <xsl:with-param name="subject" select="$entityIRI"/>
+      <xsl:with-param name="subject" select="$personIRI"/>
       <xsl:with-param name="type">schema:Person</xsl:with-param>
     </xsl:call-template>
 
     <xsl:call-template name="OUTPUT_DATA_TRIPLE">
-      <xsl:with-param name="subject" select="$entityIRI"/>
+      <xsl:with-param name="subject" select="$personIRI"/>
       <xsl:with-param name="triplequote" select="false()"/>
       <xsl:with-param name="predicate">schema:name</xsl:with-param>
       <xsl:with-param name="lang">cs</xsl:with-param>
@@ -41,7 +43,7 @@
     </xsl:call-template>
 
     <xsl:call-template name="OUTPUT_DATA_TRIPLE">
-      <xsl:with-param name="subject" select="$entityIRI"/>
+      <xsl:with-param name="subject" select="$personIRI"/>
       <xsl:with-param name="triplequote" select="false()"/>
       <xsl:with-param name="predicate">schema:givenName</xsl:with-param>
       <xsl:with-param name="lang">cs</xsl:with-param>
@@ -49,7 +51,7 @@
     </xsl:call-template>
 
     <xsl:call-template name="OUTPUT_DATA_TRIPLE">
-      <xsl:with-param name="subject" select="$entityIRI"/>
+      <xsl:with-param name="subject" select="$personIRI"/>
       <xsl:with-param name="triplequote" select="false()"/>
       <xsl:with-param name="predicate">schema:familyName</xsl:with-param>
       <xsl:with-param name="lang">cs</xsl:with-param>
@@ -57,7 +59,7 @@
     </xsl:call-template>
 
     <xsl:call-template name="OUTPUT_DATA_TRIPLE">
-      <xsl:with-param name="subject" select="$entityIRI"/>
+      <xsl:with-param name="subject" select="$personIRI"/>
       <xsl:with-param name="triplequote" select="false()"/>
       <xsl:with-param name="predicate">schema:birthDate</xsl:with-param>
       <xsl:with-param name="type">xsd:date</xsl:with-param>
@@ -65,35 +67,50 @@
     </xsl:call-template>
 
     <xsl:call-template name="OUTPUT_DATA_TRIPLE">
-      <xsl:with-param name="subject" select="$entityIRI"/>
+      <xsl:with-param name="subject" select="$personIRI"/>
       <xsl:with-param name="triplequote" select="false()"/>
       <xsl:with-param name="predicate">schema:deathDate</xsl:with-param>
       <xsl:with-param name="type">xsd:date</xsl:with-param>
       <xsl:with-param name="data" select="replace(datafield[@tag='KDU']/subfield[@code='a'], '(\d{4})(\d{2})(\d{2})', '$1-$2-$3')"/>
     </xsl:call-template>
+
+    <xsl:call-template name="OUTPUT_DATA_TRIPLE">
+      <xsl:with-param name="subject" select="$personIRI"/>
+      <xsl:with-param name="triplequote" select="false()"/>
+      <xsl:with-param name="predicate">dcterms:subject</xsl:with-param>
+      <xsl:with-param name="lang">cs</xsl:with-param>
+      <xsl:with-param name="data" select="datafield[@tag='R06']/subfield[@code='a']"/>
+    </xsl:call-template>
     
     <xsl:if test="datafield[@tag='R02']/subfield[@code='m']">
       <xsl:call-template name="OUTPUT_OBJECT_TRIPLE">
-        <xsl:with-param name="subject" select="$entityIRI"/>
+        <xsl:with-param name="subject" select="$personIRI"/>
         <xsl:with-param name="predicate">schema:birthPlace</xsl:with-param>
-        <xsl:with-param name="object" select="$birthPlaceIRI"/>
+        <xsl:with-param name="object" select="$deathPlaceIRI"/>
       </xsl:call-template>
       <xsl:call-template name="OUTPUT_TYPE_TRIPLE">
-        <xsl:with-param name="subject" select="$birthPlaceIRI"/>
+        <xsl:with-param name="subject" select="$bithPlaceIRI"/>
         <xsl:with-param name="type">schema:Place</xsl:with-param>
       </xsl:call-template>
       <xsl:call-template name="OUTPUT_DATA_TRIPLE">
-        <xsl:with-param name="subject" select="$birthPlaceIRI"/>
+        <xsl:with-param name="subject" select="$bithPlaceIRI"/>
         <xsl:with-param name="triplequote" select="false()"/>
         <xsl:with-param name="predicate">schema:name</xsl:with-param>
         <xsl:with-param name="lang">cs</xsl:with-param>
         <xsl:with-param name="data" select="datafield[@tag='R02']/subfield[@code='m']"/>
       </xsl:call-template>
+      <xsl:call-template name="OUTPUT_DATA_TRIPLE">
+        <xsl:with-param name="subject" select="$bithPlaceIRI"/>
+        <xsl:with-param name="triplequote" select="false()"/>
+        <xsl:with-param name="predicate">schema:containedInPlace</xsl:with-param>
+        <xsl:with-param name="lang">cs</xsl:with-param>
+        <xsl:with-param name="data" select="datafield[@tag='R02']/subfield[@code='o']"/>
+      </xsl:call-template>
     </xsl:if>
     
     <xsl:if test="datafield[@tag='R03']/subfield[@code='m']">
       <xsl:call-template name="OUTPUT_OBJECT_TRIPLE">
-        <xsl:with-param name="subject" select="$entityIRI"/>
+        <xsl:with-param name="subject" select="$personIRI"/>
         <xsl:with-param name="predicate">schema:deathPlace</xsl:with-param>
         <xsl:with-param name="object" select="$deathPlaceIRI"/>
       </xsl:call-template>
@@ -108,15 +125,70 @@
         <xsl:with-param name="lang">cs</xsl:with-param>
         <xsl:with-param name="data" select="datafield[@tag='R03']/subfield[@code='m']"/>
       </xsl:call-template>
+      <xsl:call-template name="OUTPUT_DATA_TRIPLE">
+        <xsl:with-param name="subject" select="$deathPlaceIRI"/>
+        <xsl:with-param name="triplequote" select="false()"/>
+        <xsl:with-param name="predicate">schema:containedInPlace</xsl:with-param>
+        <xsl:with-param name="lang">cs</xsl:with-param>
+        <xsl:with-param name="data" select="datafield[@tag='R03']/subfield[@code='o']"/>
+      </xsl:call-template>
     </xsl:if>
 
+    <xsl:for-each select="datafield[@tag='R05']">
+      <xsl:variable name="workPlaceIRI" select="concat($prefix,'place/',replace(./subfield[@code='m'],' ','%20'))"/>
+      <xsl:call-template name="OUTPUT_OBJECT_TRIPLE">
+        <xsl:with-param name="subject" select="$personIRI"/>
+        <xsl:with-param name="predicate">schema:workLocation</xsl:with-param>
+        <xsl:with-param name="object" select="$workPlaceIRI"/>
+      </xsl:call-template>
+      <xsl:call-template name="OUTPUT_TYPE_TRIPLE">
+        <xsl:with-param name="subject" select="$workPlaceIRI"/>
+        <xsl:with-param name="type">schema:Place</xsl:with-param>
+      </xsl:call-template>
+      <xsl:call-template name="OUTPUT_DATA_TRIPLE">
+        <xsl:with-param name="subject" select="$workPlaceIRI"/>
+        <xsl:with-param name="triplequote" select="false()"/>
+        <xsl:with-param name="predicate">schema:name</xsl:with-param>
+        <xsl:with-param name="lang">cs</xsl:with-param>
+        <xsl:with-param name="data">
+          <xsl:value-of select="./subfield[@code='m']"/>
+        </xsl:with-param>
+      </xsl:call-template>
+      <xsl:call-template name="OUTPUT_DATA_TRIPLE">
+        <xsl:with-param name="subject" select="$workPlaceIRI"/>
+        <xsl:with-param name="triplequote" select="false()"/>
+        <xsl:with-param name="predicate">schema:containedInPlace</xsl:with-param>
+        <xsl:with-param name="lang">cs</xsl:with-param>
+        <xsl:with-param name="data">
+          <xsl:value-of select="./subfield[@code='o']"/>
+        </xsl:with-param>
+      </xsl:call-template>
+    </xsl:for-each>
+
     <xsl:call-template name="OUTPUT_DATA_TRIPLE">
-      <xsl:with-param name="subject" select="$entityIRI"/>
+      <xsl:with-param name="subject" select="$personIRI"/>
       <xsl:with-param name="triplequote" select="false()"/>
       <xsl:with-param name="predicate">schema:disambiguatingDescription</xsl:with-param>
       <xsl:with-param name="lang">cs</xsl:with-param>
       <xsl:with-param name="data" select="datafield[@tag='678']/subfield[@code='a']"/>
     </xsl:call-template>
+
+    <xsl:call-template name="OUTPUT_DATA_TRIPLE">
+      <xsl:with-param name="subject" select="$personIRI"/>
+      <xsl:with-param name="triplequote" select="false()"/>
+      <xsl:with-param name="predicate">mads:Source</xsl:with-param>
+      <xsl:with-param name="lang">cs</xsl:with-param>
+      <xsl:with-param name="data" select="datafield[@tag='670']/subfield[@code='a']"/>
+    </xsl:call-template>
+
+    <xsl:if test="datafield[@tag='100']/subfield[@code='7']">
+      <xsl:call-template name="OUTPUT_DATA_TRIPLE">
+        <xsl:with-param name="subject" select="$personIRI"/>
+        <xsl:with-param name="triplequote" select="false()"/>
+        <xsl:with-param name="predicate">mads:isIdentifiedByAutority</xsl:with-param>
+        <xsl:with-param name="data" select="concat('https://viaf.org/viaf/sourceID/NKC|',datafield[@tag='100']/subfield[@code='7'],'#skos:Concept')"/>
+      </xsl:call-template>
+    </xsl:if>
 
   </xsl:template>
   <!--#################################################################### SUPPORT TEMPLATES ###################################################################################-->

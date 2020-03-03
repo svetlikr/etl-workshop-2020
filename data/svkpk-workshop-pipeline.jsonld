@@ -2,7 +2,7 @@
   {
     "@graph": [
       {
-        "@id": "http://localhost:8080/resources/pipelines/1582881191522",
+        "@id": "http://localhost:8080/resources/pipelines/1583177178573",
         "@type": [
           "http://linkedpipes.com/ontology/Pipeline"
         ],
@@ -14,7 +14,7 @@
         ],
         "http://linkedpipes.com/ontology/profile": [
           {
-            "@id": "http://localhost:8080/resources/pipelines/1582881191522/2"
+            "@id": "http://localhost:8080/resources/pipelines/1583177178573/2"
           }
         ],
         "http://www.w3.org/2004/02/skos/core#prefLabel": [
@@ -24,7 +24,33 @@
         ]
       },
       {
-        "@id": "http://localhost:8080/resources/pipelines/1582881191522/2",
+        "@id": "http://localhost:8080/resources/pipelines/1583177178573/10",
+        "@type": [
+          "http://linkedpipes.com/ontology/Connection"
+        ],
+        "http://linkedpipes.com/ontology/sourceBinding": [
+          {
+            "@value": "OutputRdf"
+          }
+        ],
+        "http://linkedpipes.com/ontology/sourceComponent": [
+          {
+            "@id": "http://localhost:8080/resources/pipelines/1583177178573/3"
+          }
+        ],
+        "http://linkedpipes.com/ontology/targetBinding": [
+          {
+            "@value": "InputRdf"
+          }
+        ],
+        "http://linkedpipes.com/ontology/targetComponent": [
+          {
+            "@id": "http://localhost:8080/resources/pipelines/1583177178573/9"
+          }
+        ]
+      },
+      {
+        "@id": "http://localhost:8080/resources/pipelines/1583177178573/2",
         "@type": [
           "http://linkedpipes.com/ontology/ExecutionProfile"
         ],
@@ -40,13 +66,13 @@
         ]
       },
       {
-        "@id": "http://localhost:8080/resources/pipelines/1582881191522/3",
+        "@id": "http://localhost:8080/resources/pipelines/1583177178573/3",
         "@type": [
           "http://linkedpipes.com/ontology/Component"
         ],
         "http://linkedpipes.com/ontology/configurationGraph": [
           {
-            "@id": "http://localhost:8080/resources/pipelines/1582881191522/graph/11"
+            "@id": "http://localhost:8080/resources/pipelines/1583177178573/graph/13"
           }
         ],
         "http://linkedpipes.com/ontology/template": [
@@ -73,13 +99,13 @@
         ]
       },
       {
-        "@id": "http://localhost:8080/resources/pipelines/1582881191522/4",
+        "@id": "http://localhost:8080/resources/pipelines/1583177178573/4",
         "@type": [
           "http://linkedpipes.com/ontology/Component"
         ],
         "http://linkedpipes.com/ontology/configurationGraph": [
           {
-            "@id": "http://localhost:8080/resources/pipelines/1582881191522/12"
+            "@id": "http://localhost:8080/resources/pipelines/1583177178573/16"
           }
         ],
         "http://linkedpipes.com/ontology/template": [
@@ -106,13 +132,13 @@
         ]
       },
       {
-        "@id": "http://localhost:8080/resources/pipelines/1582881191522/5",
+        "@id": "http://localhost:8080/resources/pipelines/1583177178573/5",
         "@type": [
           "http://linkedpipes.com/ontology/Component"
         ],
         "http://linkedpipes.com/ontology/configurationGraph": [
           {
-            "@id": "http://localhost:8080/resources/pipelines/1582881191522/9"
+            "@id": "http://localhost:8080/resources/pipelines/1583177178573/graph/15"
           }
         ],
         "http://linkedpipes.com/ontology/template": [
@@ -123,13 +149,13 @@
         "http://linkedpipes.com/ontology/x": [
           {
             "@type": "http://www.w3.org/2001/XMLSchema#integer",
-            "@value": "293"
+            "@value": "299"
           }
         ],
         "http://linkedpipes.com/ontology/y": [
           {
             "@type": "http://www.w3.org/2001/XMLSchema#integer",
-            "@value": "259"
+            "@value": "229"
           }
         ],
         "http://www.w3.org/2004/02/skos/core#prefLabel": [
@@ -139,7 +165,7 @@
         ]
       },
       {
-        "@id": "http://localhost:8080/resources/pipelines/1582881191522/6",
+        "@id": "http://localhost:8080/resources/pipelines/1583177178573/6",
         "@type": [
           "http://linkedpipes.com/ontology/Connection"
         ],
@@ -150,7 +176,7 @@
         ],
         "http://linkedpipes.com/ontology/sourceComponent": [
           {
-            "@id": "http://localhost:8080/resources/pipelines/1582881191522/4"
+            "@id": "http://localhost:8080/resources/pipelines/1583177178573/4"
           }
         ],
         "http://linkedpipes.com/ontology/targetBinding": [
@@ -160,17 +186,17 @@
         ],
         "http://linkedpipes.com/ontology/targetComponent": [
           {
-            "@id": "http://localhost:8080/resources/pipelines/1582881191522/5"
+            "@id": "http://localhost:8080/resources/pipelines/1583177178573/5"
           }
         ],
         "http://linkedpipes.com/ontology/vertex": [
           {
-            "@id": "http://localhost:8080/resources/pipelines/1582881191522/vertex/fcd5-acdb"
+            "@id": "http://localhost:8080/resources/pipelines/1583177178573/vertex/dbd8-bb45"
           }
         ]
       },
       {
-        "@id": "http://localhost:8080/resources/pipelines/1582881191522/8",
+        "@id": "http://localhost:8080/resources/pipelines/1583177178573/8",
         "@type": [
           "http://linkedpipes.com/ontology/Connection"
         ],
@@ -181,7 +207,7 @@
         ],
         "http://linkedpipes.com/ontology/sourceComponent": [
           {
-            "@id": "http://localhost:8080/resources/pipelines/1582881191522/5"
+            "@id": "http://localhost:8080/resources/pipelines/1583177178573/5"
           }
         ],
         "http://linkedpipes.com/ontology/targetBinding": [
@@ -191,18 +217,18 @@
         ],
         "http://linkedpipes.com/ontology/targetComponent": [
           {
-            "@id": "http://localhost:8080/resources/pipelines/1582881191522/3"
+            "@id": "http://localhost:8080/resources/pipelines/1583177178573/3"
           }
         ]
       },
       {
-        "@id": "http://localhost:8080/resources/pipelines/1582881191522/component/69e4-934e",
+        "@id": "http://localhost:8080/resources/pipelines/1583177178573/9",
         "@type": [
           "http://linkedpipes.com/ontology/Component"
         ],
         "http://linkedpipes.com/ontology/configurationGraph": [
           {
-            "@id": "http://localhost:8080/resources/pipelines/1582881191522/component/69e4-934e/configuration"
+            "@id": "http://localhost:8080/resources/pipelines/1583177178573/11"
           }
         ],
         "http://linkedpipes.com/ontology/template": [
@@ -229,33 +255,7 @@
         ]
       },
       {
-        "@id": "http://localhost:8080/resources/pipelines/1582881191522/connection/384d-b342",
-        "@type": [
-          "http://linkedpipes.com/ontology/Connection"
-        ],
-        "http://linkedpipes.com/ontology/sourceBinding": [
-          {
-            "@value": "OutputRdf"
-          }
-        ],
-        "http://linkedpipes.com/ontology/sourceComponent": [
-          {
-            "@id": "http://localhost:8080/resources/pipelines/1582881191522/3"
-          }
-        ],
-        "http://linkedpipes.com/ontology/targetBinding": [
-          {
-            "@value": "InputRdf"
-          }
-        ],
-        "http://linkedpipes.com/ontology/targetComponent": [
-          {
-            "@id": "http://localhost:8080/resources/pipelines/1582881191522/component/69e4-934e"
-          }
-        ]
-      },
-      {
-        "@id": "http://localhost:8080/resources/pipelines/1582881191522/vertex/fcd5-acdb",
+        "@id": "http://localhost:8080/resources/pipelines/1583177178573/vertex/dbd8-bb45",
         "@type": [
           "http://linkedpipes.com/ontology/Vertex"
         ],
@@ -279,12 +279,90 @@
         ]
       }
     ],
-    "@id": "http://localhost:8080/resources/pipelines/1582881191522"
+    "@id": "http://localhost:8080/resources/pipelines/1583177178573"
   },
   {
     "@graph": [
       {
-        "@id": "http://localhost:8080/resources/pipelines/1582881191522/12",
+        "@id": "http://localhost:8080/resources/pipelines/1583177178573/9/configuration",
+        "@type": [
+          "http://plugins.linkedpipes.com/ontology/l-sparqlEndpoint#Configuration"
+        ],
+        "http://plugins.linkedpipes.com/ontology/l-sparqlEndpoint#clearGraph": [
+          {
+            "@type": "http://www.w3.org/2001/XMLSchema#boolean",
+            "@value": "true"
+          }
+        ],
+        "http://plugins.linkedpipes.com/ontology/l-sparqlEndpoint#clearGraphControl": [
+          {
+            "@id": "http://plugins.linkedpipes.com/resource/configuration/None"
+          }
+        ],
+        "http://plugins.linkedpipes.com/ontology/l-sparqlEndpoint#commitSizeControl": [
+          {
+            "@id": "http://plugins.linkedpipes.com/resource/configuration/None"
+          }
+        ],
+        "http://plugins.linkedpipes.com/ontology/l-sparqlEndpoint#endpoint": [
+          {
+            "@value": "http://fuseki:3030/svkpk/update"
+          }
+        ],
+        "http://plugins.linkedpipes.com/ontology/l-sparqlEndpoint#endpointControl": [
+          {
+            "@id": "http://plugins.linkedpipes.com/resource/configuration/None"
+          }
+        ],
+        "http://plugins.linkedpipes.com/ontology/l-sparqlEndpoint#password": [
+          {
+            "@value": "pw123"
+          }
+        ],
+        "http://plugins.linkedpipes.com/ontology/l-sparqlEndpoint#passwordControl": [
+          {
+            "@id": "http://plugins.linkedpipes.com/resource/configuration/None"
+          }
+        ],
+        "http://plugins.linkedpipes.com/ontology/l-sparqlEndpoint#targetGraphURI": [
+          {
+            "@value": "https://svkpk.cz/resource/dataset/reos"
+          }
+        ],
+        "http://plugins.linkedpipes.com/ontology/l-sparqlEndpoint#targetGraphURIControl": [
+          {
+            "@id": "http://plugins.linkedpipes.com/resource/configuration/None"
+          }
+        ],
+        "http://plugins.linkedpipes.com/ontology/l-sparqlEndpoint#useAuthentication": [
+          {
+            "@type": "http://www.w3.org/2001/XMLSchema#boolean",
+            "@value": "true"
+          }
+        ],
+        "http://plugins.linkedpipes.com/ontology/l-sparqlEndpoint#useAuthenticationControl": [
+          {
+            "@id": "http://plugins.linkedpipes.com/resource/configuration/None"
+          }
+        ],
+        "http://plugins.linkedpipes.com/ontology/l-sparqlEndpoint#userName": [
+          {
+            "@value": "admin"
+          }
+        ],
+        "http://plugins.linkedpipes.com/ontology/l-sparqlEndpoint#userNameControl": [
+          {
+            "@id": "http://plugins.linkedpipes.com/resource/configuration/None"
+          }
+        ]
+      }
+    ],
+    "@id": "http://localhost:8080/resources/pipelines/1583177178573/11"
+  },
+  {
+    "@graph": [
+      {
+        "@id": "http://localhost:8080/resources/pipelines/1583177178573/16",
         "@type": [
           "http://plugins.linkedpipes.com/ontology/e-httpGetFile#Configuration"
         ],
@@ -353,143 +431,12 @@
         ]
       }
     ],
-    "@id": "http://localhost:8080/resources/pipelines/1582881191522/12"
+    "@id": "http://localhost:8080/resources/pipelines/1583177178573/16"
   },
   {
     "@graph": [
       {
-        "@id": "http://localhost:8080/resources/pipelines/1582881191522/5/configuration",
-        "@type": [
-          "http://plugins.linkedpipes.com/ontology/t-xslt#Configuration"
-        ],
-        "http://plugins.linkedpipes.com/ontology/t-xslt#extension": [
-          {
-            "@value": "ttl"
-          }
-        ],
-        "http://plugins.linkedpipes.com/ontology/t-xslt#extensionControl": [
-          {
-            "@id": "http://plugins.linkedpipes.com/resource/configuration/None"
-          }
-        ],
-        "http://plugins.linkedpipes.com/ontology/t-xslt#skipOnError": [
-          {
-            "@type": "http://www.w3.org/2001/XMLSchema#boolean",
-            "@value": "false"
-          }
-        ],
-        "http://plugins.linkedpipes.com/ontology/t-xslt#skipOnErrorControl": [
-          {
-            "@id": "http://plugins.linkedpipes.com/resource/configuration/None"
-          }
-        ],
-        "http://plugins.linkedpipes.com/ontology/t-xslt#template": [
-          {
-            "@value": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<xsl:stylesheet version=\"2.0\" xmlns:xsl=\"http://www.w3.org/1999/XSL/Transform\" xmlns:xs=\"http://www.w3.org/2001/XMLSchema\" xmlns:fn=\"http://www.w3.org/2005/xpath-functions\" xpath-default-namespace=\"http://www.loc.gov/MARC21/slim\">\n\t<xsl:output method=\"text\" version=\"1.0\" encoding=\"UTF-8\" indent=\"no\"/>\n\t<xsl:variable name=\"prefix\">https://svkpk.cz/zdroj/regionální-osobnost/</xsl:variable>\n\t<xsl:template match=\"/\">@prefix adms:  &lt;http://www.w3.org/ns/adms#&gt; .\n@prefix rdf:  &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt; .\n@prefix rdfs:  &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .\n@prefix xsd:  &lt;http://www.w3.org/2001/XMLSchema#&gt; .\n@prefix dcterms: &lt;http://purl.org/dc/terms/&gt; .\n@prefix skos: &lt;http://www.w3.org/2004/02/skos/core#&gt; .\n@prefix void: &lt;http://rdfs.org/ns/void#&gt; .\n@prefix foaf: &lt;http://xmlns.com/foaf/0.1/&gt; .\n@prefix gr: &lt;http://purl.org/goodrelations/v1#&gt; .\n@prefix adms: &lt;http://www.w3.org/ns/adms#&gt; .\n@prefix s: &lt;http://schema.org/&gt; .\n@prefix cpov: &lt;http://data.europa.eu/m8g/&gt; .\n@prefix locn: &lt;http://www.w3.org/ns/locn#&gt; .\n@prefix rov: &lt;http://www.w3.org/ns/regorg#&gt; .\n\t\n<xsl:apply-templates/>\n\t</xsl:template>\n\t<xsl:template match=\"collection\">\n\t\t<xsl:apply-templates/>\n\t</xsl:template>\n\t<xsl:template match=\"record\">\n\t\t<xsl:variable name=\"entityIRI\" select=\"concat($prefix,controlfield[@tag='001'])\"/>\n\t\t<xsl:variable name=\"birthPlaceIRI\" select=\"concat($prefix,'místo/',replace(datafield[@tag='R02']/subfield[@code='m'],' ','%20'))\"/>\n\t\t<xsl:variable name=\"deathPlaceIRI\" select=\"concat($prefix,'místo/',replace(datafield[@tag='R03']/subfield[@code='m'],' ','%20'))\"/>\n\t\t<xsl:call-template name=\"OUTPUT_TYPE_TRIPLE\">\n\t\t\t<xsl:with-param name=\"subject\" select=\"$entityIRI\"/>\n\t\t\t<xsl:with-param name=\"type\">s:Person</xsl:with-param>\n\t\t</xsl:call-template>\n\t\t<xsl:call-template name=\"OUTPUT_DATA_TRIPLE\">\n\t\t\t<xsl:with-param name=\"subject\" select=\"$entityIRI\"/>\n\t\t\t<xsl:with-param name=\"triplequote\" select=\"false()\"/>\n\t\t\t<xsl:with-param name=\"predicate\">s:name</xsl:with-param>\n\t\t\t<xsl:with-param name=\"lang\">cs</xsl:with-param>\n\t\t\t<xsl:with-param name=\"data\" select=\"datafield[@tag='100']/subfield[@code='a']\"/>\n\t\t</xsl:call-template>\n\t\t\n\t\t<xsl:if test=\"datafield[@tag='R02']/subfield[@code='m']\">\n\t\t\t<xsl:call-template name=\"OUTPUT_OBJECT_TRIPLE\">\n\t\t\t\t<xsl:with-param name=\"subject\" select=\"$entityIRI\"/>\n\t\t\t\t<xsl:with-param name=\"predicate\">s:birthPlace</xsl:with-param>\n\t\t\t\t<xsl:with-param name=\"object\" select=\"$birthPlaceIRI\"/>\n\t\t\t</xsl:call-template>\n\t\t\t<xsl:call-template name=\"OUTPUT_TYPE_TRIPLE\">\n\t\t\t\t<xsl:with-param name=\"subject\" select=\"$birthPlaceIRI\"/>\n\t\t\t\t<xsl:with-param name=\"type\">s:Place</xsl:with-param>\n\t\t\t</xsl:call-template>\n\t\t\t<xsl:call-template name=\"OUTPUT_DATA_TRIPLE\">\n\t\t\t\t<xsl:with-param name=\"subject\" select=\"$birthPlaceIRI\"/>\n\t\t\t\t<xsl:with-param name=\"triplequote\" select=\"false()\"/>\n\t\t\t\t<xsl:with-param name=\"predicate\">s:name</xsl:with-param>\n\t\t\t\t<xsl:with-param name=\"lang\">cs</xsl:with-param>\n\t\t\t\t<xsl:with-param name=\"data\" select=\"datafield[@tag='R02']/subfield[@code='m']\"/>\n\t\t\t</xsl:call-template>\n\t\t</xsl:if>\n\t\t\n\t\t<xsl:if test=\"datafield[@tag='R03']/subfield[@code='m']\">\n\t\t\t<xsl:call-template name=\"OUTPUT_OBJECT_TRIPLE\">\n\t\t\t\t<xsl:with-param name=\"subject\" select=\"$entityIRI\"/>\n\t\t\t\t<xsl:with-param name=\"predicate\">s:birthPlace</xsl:with-param>\n\t\t\t\t<xsl:with-param name=\"object\" select=\"$deathPlaceIRI\"/>\n\t\t\t</xsl:call-template>\n\t\t\t<xsl:call-template name=\"OUTPUT_TYPE_TRIPLE\">\n\t\t\t\t<xsl:with-param name=\"subject\" select=\"$deathPlaceIRI\"/>\n\t\t\t\t<xsl:with-param name=\"type\">s:Place</xsl:with-param>\n\t\t\t</xsl:call-template>\n\t\t\t<xsl:call-template name=\"OUTPUT_DATA_TRIPLE\">\n\t\t\t\t<xsl:with-param name=\"subject\" select=\"$deathPlaceIRI\"/>\n\t\t\t\t<xsl:with-param name=\"triplequote\" select=\"false()\"/>\n\t\t\t\t<xsl:with-param name=\"predicate\">s:name</xsl:with-param>\n\t\t\t\t<xsl:with-param name=\"lang\">cs</xsl:with-param>\n\t\t\t\t<xsl:with-param name=\"data\" select=\"datafield[@tag='R03']/subfield[@code='m']\"/>\n\t\t\t</xsl:call-template>\n\t\t</xsl:if>\n\n\t</xsl:template>\n\t<!--#################################################################### SUPPORT TEMPLATES ###################################################################################-->\n\t<xsl:template name=\"OUTPUT_IDENTIFIER\">\n\t\t<xsl:param name=\"conceptURI\"/>\n\t\t<xsl:param name=\"conceptURI_NUI\"/>\n\t\t<xsl:param name=\"notation\"/>\n\t\t<xsl:param name=\"agencyName\"/>\n\t\t<xsl:param name=\"agencyURI\"/>\n\t\t<xsl:param name=\"schemeName\"/>\n\t\t<xsl:param name=\"schemeURI\"/>\n\t\t<!--<xsl:variable name=\"identifierURI\" select=\"concat($conceptURI, '/identifier/', lower-case($schemeName), '/', $notation[1])\"/>-->\n\t\t<xsl:variable name=\"identifierURI_NUI\" select=\"concat($conceptURI_NUI, '/identifier/', lower-case($schemeName), '/', $notation[1])\"/>\n\t\t<!--\n\t\t<xsl:call-template name=\"OUTPUT_SAME_AS_TRIPLE\">\n\t\t\t<xsl:with-param name=\"subject\" select=\"$identifierURI\" />\n\t\t\t<xsl:with-param name=\"object\" select=\"$identifierURI_NUI\" />\n\t\t</xsl:call-template>\n-->\n\t\t<xsl:call-template name=\"OUTPUT_OBJECT_TRIPLE\">\n\t\t\t<xsl:with-param name=\"subject\" select=\"$conceptURI\"/>\n\t\t\t<xsl:with-param name=\"predicate\">adms:identifier</xsl:with-param>\n\t\t\t<xsl:with-param name=\"object\" select=\"$identifierURI_NUI\"/>\n\t\t</xsl:call-template>\n\t\t<xsl:call-template name=\"OUTPUT_TYPE_TRIPLE\">\n\t\t\t<xsl:with-param name=\"subject\" select=\"$identifierURI_NUI\"/>\n\t\t\t<xsl:with-param name=\"type\">adms:Identifier</xsl:with-param>\n\t\t</xsl:call-template>\n\t\t<xsl:call-template name=\"OUTPUT_DATA_TRIPLE\">\n\t\t\t<xsl:with-param name=\"subject\" select=\"$identifierURI_NUI\"/>\n\t\t\t<xsl:with-param name=\"predicate\">skos:notation</xsl:with-param>\n\t\t\t<xsl:with-param name=\"data\" select=\"$notation\"/>\n\t\t</xsl:call-template>\n\t\t<xsl:call-template name=\"OUTPUT_DATA_TRIPLE\">\n\t\t\t<xsl:with-param name=\"subject\" select=\"$identifierURI_NUI\"/>\n\t\t\t<xsl:with-param name=\"predicate\">adms:schemeAgency</xsl:with-param>\n\t\t\t<xsl:with-param name=\"data\" select=\"$agencyName\"/>\n\t\t</xsl:call-template>\n\t\t<xsl:call-template name=\"OUTPUT_OBJECT_TRIPLE\">\n\t\t\t<xsl:with-param name=\"subject\" select=\"$identifierURI_NUI\"/>\n\t\t\t<xsl:with-param name=\"predicate\">dcterms:creator</xsl:with-param>\n\t\t\t<xsl:with-param name=\"object\" select=\"$agencyURI\"/>\n\t\t</xsl:call-template>\n\t\t<xsl:call-template name=\"OUTPUT_OBJECT_TRIPLE\">\n\t\t\t<xsl:with-param name=\"subject\" select=\"$identifierURI_NUI\"/>\n\t\t\t<xsl:with-param name=\"predicate\">dcterms:type</xsl:with-param>\n\t\t\t<xsl:with-param name=\"object\" select=\"$schemeURI\"/>\n\t\t</xsl:call-template>\n\t</xsl:template>\n\t<xsl:template name=\"OUTPUT_OBJECT_TRIPLE\">\n\t\t<xsl:param name=\"subject\"/>\n\t\t<xsl:param name=\"predicate\"/>\n\t\t<xsl:param name=\"object\"/>\n\t\t<xsl:if test=\"$object\">\n\t\t\t<xsl:text>&lt;</xsl:text>\n\t\t\t<xsl:value-of select=\"$subject\"/>\n\t\t\t<xsl:text>&gt; </xsl:text>\n\t\t\t<xsl:value-of select=\"$predicate\"/>\n\t\t\t<xsl:text> &lt;</xsl:text>\n\t\t\t<xsl:value-of select=\"$object\"/>\n\t\t\t<xsl:text>&gt; .\n</xsl:text>\n\t\t</xsl:if>\n\t</xsl:template>\n\t<xsl:template name=\"OUTPUT_OBJECT_CURIE_TRIPLE\">\n\t\t<xsl:param name=\"subject\"/>\n\t\t<xsl:param name=\"predicate\"/>\n\t\t<xsl:param name=\"object\"/>\n\t\t<xsl:if test=\"$object\">\n\t\t\t<xsl:value-of select=\"$subject\"/>\n\t\t\t<xsl:text> </xsl:text>\n\t\t\t<xsl:value-of select=\"$predicate\"/>\n\t\t\t<xsl:text> </xsl:text>\n\t\t\t<xsl:value-of select=\"$object\"/>\n\t\t\t<xsl:text> .\n</xsl:text>\n\t\t</xsl:if>\n\t</xsl:template>\n\t<xsl:template name=\"OUTPUT_TYPE_TRIPLE\">\n\t\t<xsl:param name=\"subject\"/>\n\t\t<xsl:param name=\"type\"/>\n\t\t<xsl:text>&lt;</xsl:text>\n\t\t<xsl:value-of select=\"$subject\"/>\n\t\t<xsl:text>&gt; a </xsl:text>\n\t\t<xsl:value-of select=\"$type\"/>\n\t\t<xsl:text> .\n</xsl:text>\n\t</xsl:template>\n\t<xsl:template name=\"OUTPUT_TYPE_CURIE_TRIPLE\">\n\t\t<xsl:param name=\"subject\"/>\n\t\t<xsl:param name=\"type\"/>\n\t\t<xsl:value-of select=\"$subject\"/>\n\t\t<xsl:text> a </xsl:text>\n\t\t<xsl:value-of select=\"$type\"/>\n\t\t<xsl:text> .\n</xsl:text>\n\t</xsl:template>\n\t<xsl:template name=\"OUTPUT_SAME_AS_TRIPLE\">\n\t\t<xsl:param name=\"subject\"/>\n\t\t<xsl:param name=\"object\"/>\n\t\t<xsl:text>&lt;</xsl:text>\n\t\t<xsl:value-of select=\"$subject\"/>\n\t\t<xsl:text>&gt; owl:sameAs </xsl:text>\n\t\t<xsl:text>&lt;</xsl:text>\n\t\t<xsl:value-of select=\"$object\"/>\n\t\t<xsl:text>&gt; .\n</xsl:text>\n\t</xsl:template>\n\t<xsl:template name=\"OUTPUT_DATA_TRIPLE\">\n\t\t<xsl:param name=\"subject\"/>\n\t\t<xsl:param name=\"predicate\"/>\n\t\t<xsl:param name=\"data\"/>\n\t\t<xsl:param name=\"type\"/>\n\t\t<xsl:param name=\"lang\"/>\n\t\t<xsl:param name=\"triplequote\"/>\n\t\t<xsl:for-each select=\"$data\">\n\t\t\t<xsl:variable name=\"data-item\" select=\"replace(replace(replace(., '\\\\', '\\\\\\\\'), '&quot;', '\\\\&quot;'),'\\n', ' ')\"/>\n\t\t\t<xsl:if test=\"string-length($data-item) &gt; 0\">\n\t\t\t\t<xsl:text>&lt;</xsl:text>\n\t\t\t\t<xsl:value-of select=\"$subject\"/>\n\t\t\t\t<xsl:text>&gt; </xsl:text>\n\t\t\t\t<xsl:value-of select=\"$predicate\"/>\n\t\t\t\t<xsl:if test=\"$triplequote=true()\">\n\t\t\t\t\t<xsl:text> \"\"\"</xsl:text>\n\t\t\t\t</xsl:if>\n\t\t\t\t<xsl:if test=\"$triplequote=false()\">\n\t\t\t\t\t<xsl:text> \"</xsl:text>\n\t\t\t\t</xsl:if>\n\t\t\t\t<xsl:value-of select=\"$data-item\"/>\n\t\t\t\t<xsl:if test=\"$triplequote=true()\">\n\t\t\t\t\t<xsl:text>\"\"\"</xsl:text>\n\t\t\t\t</xsl:if>\n\t\t\t\t<xsl:if test=\"$triplequote=false()\">\n\t\t\t\t\t<xsl:text>\"</xsl:text>\n\t\t\t\t</xsl:if>\n\t\t\t\t<xsl:choose>\n\t\t\t\t\t<xsl:when test=\"$lang\">\n\t\t\t\t\t\t<xsl:text>@</xsl:text>\n\t\t\t\t\t\t<xsl:value-of select=\"$lang\"/>\n\t\t\t\t\t</xsl:when>\n\t\t\t\t\t<xsl:otherwise>\n\t\t\t\t\t\t<xsl:if test=\"$type\">\n\t\t\t\t\t\t\t<xsl:text>^^</xsl:text>\n\t\t\t\t\t\t\t<xsl:value-of select=\"$type\"/>\n\t\t\t\t\t\t</xsl:if>\n\t\t\t\t\t</xsl:otherwise>\n\t\t\t\t</xsl:choose>\n\t\t\t\t<xsl:text> .\n</xsl:text>\n\t\t\t</xsl:if>\n\t\t</xsl:for-each>\n\t</xsl:template>\n\t<xsl:template name=\"OUTPUT_DATA_CURIE_TRIPLE\">\n\t\t<xsl:param name=\"subject\"/>\n\t\t<xsl:param name=\"predicate\"/>\n\t\t<xsl:param name=\"data\"/>\n\t\t<xsl:param name=\"type\"/>\n\t\t<xsl:param name=\"lang\"/>\n\t\t<xsl:param name=\"triplequote\"/>\n\t\t<xsl:for-each select=\"$data\">\n\t\t\t<xsl:variable name=\"data-item\" select=\"replace(replace(replace(., '\\\\', '\\\\\\\\'), '&quot;', '\\\\&quot;'),'\\n', ' ')\"/>\n\t\t\t<xsl:if test=\"string-length($data-item) &gt; 0\">\n\t\t\t\t<xsl:value-of select=\"$subject\"/>\n\t\t\t\t<xsl:text> </xsl:text>\n\t\t\t\t<xsl:value-of select=\"$predicate\"/>\n\t\t\t\t<xsl:if test=\"$triplequote=true()\">\n\t\t\t\t\t<xsl:text> \"\"\"</xsl:text>\n\t\t\t\t</xsl:if>\n\t\t\t\t<xsl:if test=\"$triplequote=false()\">\n\t\t\t\t\t<xsl:text> \"</xsl:text>\n\t\t\t\t</xsl:if>\n\t\t\t\t<xsl:value-of select=\"$data-item\"/>\n\t\t\t\t<xsl:if test=\"$triplequote=true()\">\n\t\t\t\t\t<xsl:text>\"\"\"</xsl:text>\n\t\t\t\t</xsl:if>\n\t\t\t\t<xsl:if test=\"$triplequote=false()\">\n\t\t\t\t\t<xsl:text>\"</xsl:text>\n\t\t\t\t</xsl:if>\n\t\t\t\t<xsl:choose>\n\t\t\t\t\t<xsl:when test=\"$lang\">\n\t\t\t\t\t\t<xsl:text>@</xsl:text>\n\t\t\t\t\t\t<xsl:value-of select=\"$lang\"/>\n\t\t\t\t\t</xsl:when>\n\t\t\t\t\t<xsl:otherwise>\n\t\t\t\t\t\t<xsl:if test=\"$type\">\n\t\t\t\t\t\t\t<xsl:text>^^</xsl:text>\n\t\t\t\t\t\t\t<xsl:value-of select=\"$type\"/>\n\t\t\t\t\t\t</xsl:if>\n\t\t\t\t\t</xsl:otherwise>\n\t\t\t\t</xsl:choose>\n\t\t\t\t<xsl:text> .\n</xsl:text>\n\t\t\t</xsl:if>\n\t\t</xsl:for-each>\n\t</xsl:template>\n\t<xsl:template name=\"OUTPUT_BOOL_CURIE_TRIPLE\">\n\t\t<xsl:param name=\"subject\"/>\n\t\t<xsl:param name=\"predicate\"/>\n\t\t<xsl:param name=\"data\"/>\n\t\t<xsl:for-each select=\"$data\">\n\t\t\t<xsl:variable name=\"data-item\" select=\"replace(replace(replace(., '\\\\', '\\\\\\\\'), '&quot;', '\\\\&quot;'),'\\n', ' ')\"/>\n\t\t\t<xsl:if test=\"string-length($data-item) &gt; 0\">\n\t\t\t\t<xsl:value-of select=\"$subject\"/>\n\t\t\t\t<xsl:text> </xsl:text>\n\t\t\t\t<xsl:value-of select=\"$predicate\"/>\n\t\t\t\t<xsl:text> </xsl:text>\n\t\t\t\t<xsl:value-of select=\"$data-item\"/>\n\t\t\t\t<xsl:text> .\n</xsl:text>\n\t\t\t</xsl:if>\n\t\t</xsl:for-each>\n\t</xsl:template>\n\t<xsl:template match=\"*|@*\"/>\n</xsl:stylesheet>"
-          }
-        ],
-        "http://plugins.linkedpipes.com/ontology/t-xslt#templateControl": [
-          {
-            "@id": "http://plugins.linkedpipes.com/resource/configuration/None"
-          }
-        ],
-        "http://plugins.linkedpipes.com/ontology/t-xslt#threads": [
-          {
-            "@type": "http://www.w3.org/2001/XMLSchema#integer",
-            "@value": "1"
-          }
-        ],
-        "http://plugins.linkedpipes.com/ontology/t-xslt#threadsControl": [
-          {
-            "@id": "http://plugins.linkedpipes.com/resource/configuration/None"
-          }
-        ]
-      }
-    ],
-    "@id": "http://localhost:8080/resources/pipelines/1582881191522/9"
-  },
-  {
-    "@graph": [
-      {
-        "@id": "http://localhost:8080/resources/pipelines/1582881191522/component/69e4-934e/configuration",
-        "@type": [
-          "http://plugins.linkedpipes.com/ontology/l-sparqlEndpoint#Configuration"
-        ],
-        "http://plugins.linkedpipes.com/ontology/l-sparqlEndpoint#clearGraph": [
-          {
-            "@type": "http://www.w3.org/2001/XMLSchema#boolean",
-            "@value": "true"
-          }
-        ],
-        "http://plugins.linkedpipes.com/ontology/l-sparqlEndpoint#clearGraphControl": [
-          {
-            "@id": "http://plugins.linkedpipes.com/resource/configuration/None"
-          }
-        ],
-        "http://plugins.linkedpipes.com/ontology/l-sparqlEndpoint#commitSizeControl": [
-          {
-            "@id": "http://plugins.linkedpipes.com/resource/configuration/None"
-          }
-        ],
-        "http://plugins.linkedpipes.com/ontology/l-sparqlEndpoint#endpoint": [
-          {
-            "@value": "http://fuseki:3030/svkpk/update"
-          }
-        ],
-        "http://plugins.linkedpipes.com/ontology/l-sparqlEndpoint#endpointControl": [
-          {
-            "@id": "http://plugins.linkedpipes.com/resource/configuration/None"
-          }
-        ],
-        "http://plugins.linkedpipes.com/ontology/l-sparqlEndpoint#password": [
-          {
-            "@value": "pw123"
-          }
-        ],
-        "http://plugins.linkedpipes.com/ontology/l-sparqlEndpoint#passwordControl": [
-          {
-            "@id": "http://plugins.linkedpipes.com/resource/configuration/None"
-          }
-        ],
-        "http://plugins.linkedpipes.com/ontology/l-sparqlEndpoint#targetGraphURI": [
-          {
-            "@value": "https://svkpk.cz/zdroj/datova-sada/reos"
-          }
-        ],
-        "http://plugins.linkedpipes.com/ontology/l-sparqlEndpoint#targetGraphURIControl": [
-          {
-            "@id": "http://plugins.linkedpipes.com/resource/configuration/None"
-          }
-        ],
-        "http://plugins.linkedpipes.com/ontology/l-sparqlEndpoint#useAuthentication": [
-          {
-            "@type": "http://www.w3.org/2001/XMLSchema#boolean",
-            "@value": "true"
-          }
-        ],
-        "http://plugins.linkedpipes.com/ontology/l-sparqlEndpoint#useAuthenticationControl": [
-          {
-            "@id": "http://plugins.linkedpipes.com/resource/configuration/None"
-          }
-        ],
-        "http://plugins.linkedpipes.com/ontology/l-sparqlEndpoint#userName": [
-          {
-            "@value": "admin"
-          }
-        ],
-        "http://plugins.linkedpipes.com/ontology/l-sparqlEndpoint#userNameControl": [
-          {
-            "@id": "http://plugins.linkedpipes.com/resource/configuration/None"
-          }
-        ]
-      }
-    ],
-    "@id": "http://localhost:8080/resources/pipelines/1582881191522/component/69e4-934e/configuration"
-  },
-  {
-    "@graph": [
-      {
-        "@id": "http://localhost:8080/resources/pipelines/1582881191522/10",
+        "@id": "http://localhost:8080/resources/pipelines/1583177178573/12",
         "@type": [
           "http://plugins.linkedpipes.com/ontology/t-filesToRdfGraph#Configuration"
         ],
@@ -527,6 +474,59 @@
         ]
       }
     ],
-    "@id": "http://localhost:8080/resources/pipelines/1582881191522/graph/11"
+    "@id": "http://localhost:8080/resources/pipelines/1583177178573/graph/13"
+  },
+  {
+    "@graph": [
+      {
+        "@id": "http://localhost:8080/resources/pipelines/1583177178573/5/configuration",
+        "@type": [
+          "http://plugins.linkedpipes.com/ontology/t-xslt#Configuration"
+        ],
+        "http://plugins.linkedpipes.com/ontology/t-xslt#extension": [
+          {
+            "@value": "ttl"
+          }
+        ],
+        "http://plugins.linkedpipes.com/ontology/t-xslt#extensionControl": [
+          {
+            "@id": "http://plugins.linkedpipes.com/resource/configuration/None"
+          }
+        ],
+        "http://plugins.linkedpipes.com/ontology/t-xslt#skipOnError": [
+          {
+            "@type": "http://www.w3.org/2001/XMLSchema#boolean",
+            "@value": "false"
+          }
+        ],
+        "http://plugins.linkedpipes.com/ontology/t-xslt#skipOnErrorControl": [
+          {
+            "@id": "http://plugins.linkedpipes.com/resource/configuration/None"
+          }
+        ],
+        "http://plugins.linkedpipes.com/ontology/t-xslt#template": [
+          {
+            "@value": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<xsl:stylesheet version=\"2.0\" xmlns:xsl=\"http://www.w3.org/1999/XSL/Transform\" xmlns:xs=\"http://www.w3.org/2001/XMLSchema\" xmlns:fn=\"http://www.w3.org/2005/xpath-functions\" xpath-default-namespace=\"http://www.loc.gov/MARC21/slim\">\n  <xsl:output method=\"text\" version=\"1.0\" encoding=\"UTF-8\" indent=\"no\"/>\n  <xsl:variable name=\"prefix\">https://svkpk.cz/resource/</xsl:variable>\n  <xsl:template match=\"/\">@prefix adms:  &lt;http://www.w3.org/ns/adms#&gt; .\n@prefix rdf:  &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt; .\n@prefix rdfs:  &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .\n@prefix xsd:  &lt;http://www.w3.org/2001/XMLSchema#&gt; .\n@prefix dcterms: &lt;http://purl.org/dc/terms/&gt; .\n@prefix skos: &lt;http://www.w3.org/2004/02/skos/core#&gt; .\n@prefix void: &lt;http://rdfs.org/ns/void#&gt; .\n@prefix foaf: &lt;http://xmlns.com/foaf/0.1/&gt; .\n@prefix gr: &lt;http://purl.org/goodrelations/v1#&gt; .\n@prefix adms: &lt;http://www.w3.org/ns/adms#&gt; .\n@prefix schema: &lt;http://schema.org/&gt; .\n@prefix cpov: &lt;http://data.europa.eu/m8g/&gt; .\n@prefix locn: &lt;http://www.w3.org/ns/locn#&gt; .\n@prefix rov: &lt;http://www.w3.org/ns/regorg#&gt; .\n@prefix mads: &lt;http://www.loc.gov/mads/rdf/v1#&gt; .\n  \n<xsl:apply-templates/>\n  </xsl:template>\n  <xsl:template match=\"collection\">\n    <xsl:apply-templates/>\n  </xsl:template>\n  <xsl:template match=\"record\">\n    <xsl:variable name=\"personIRI\" select=\"concat($prefix,'person/',controlfield[@tag='001'])\"/>\n    <xsl:variable name=\"placeIRI\" select=\"concat($prefix,'place/',replace(datafield[@tag='R02']/subfield[@code='m'],' ','%20'))\"/>\n    <xsl:variable name=\"workIRI\" select=\"concat($prefix,'work/',replace(datafield[@tag='670']/subfield[@code='a'],' ','%20'))\"/>\n    \n    <xsl:call-template name=\"OUTPUT_TYPE_TRIPLE\">\n      <xsl:with-param name=\"subject\" select=\"$personIRI\"/>\n      <xsl:with-param name=\"type\">schema:Person</xsl:with-param>\n    </xsl:call-template>\n\n    <xsl:call-template name=\"OUTPUT_DATA_TRIPLE\">\n      <xsl:with-param name=\"subject\" select=\"$personIRI\"/>\n      <xsl:with-param name=\"triplequote\" select=\"false()\"/>\n      <xsl:with-param name=\"predicate\">schema:name</xsl:with-param>\n      <xsl:with-param name=\"lang\">cs</xsl:with-param>\n      <xsl:with-param name=\"data\" select=\"replace(datafield[@tag='100']/subfield[@code='a'], '(.*), (.*),', '$2 $1')\"/>\n    </xsl:call-template>\n\n    <xsl:call-template name=\"OUTPUT_DATA_TRIPLE\">\n      <xsl:with-param name=\"subject\" select=\"$personIRI\"/>\n      <xsl:with-param name=\"triplequote\" select=\"false()\"/>\n      <xsl:with-param name=\"predicate\">schema:givenName</xsl:with-param>\n      <xsl:with-param name=\"lang\">cs</xsl:with-param>\n      <xsl:with-param name=\"data\" select=\"replace(datafield[@tag='100']/subfield[@code='a'], '(.*), (.*),', '$1')\"/>\n    </xsl:call-template>\n\n    <xsl:call-template name=\"OUTPUT_DATA_TRIPLE\">\n      <xsl:with-param name=\"subject\" select=\"$personIRI\"/>\n      <xsl:with-param name=\"triplequote\" select=\"false()\"/>\n      <xsl:with-param name=\"predicate\">schema:familyName</xsl:with-param>\n      <xsl:with-param name=\"lang\">cs</xsl:with-param>\n      <xsl:with-param name=\"data\" select=\"replace(datafield[@tag='100']/subfield[@code='a'], '(.*), (.*),', '$2')\"/>\n    </xsl:call-template>\n\n    <xsl:call-template name=\"OUTPUT_DATA_TRIPLE\">\n      <xsl:with-param name=\"subject\" select=\"$personIRI\"/>\n      <xsl:with-param name=\"triplequote\" select=\"false()\"/>\n      <xsl:with-param name=\"predicate\">schema:birthDate</xsl:with-param>\n      <xsl:with-param name=\"type\">xsd:date</xsl:with-param>\n      <xsl:with-param name=\"data\" select=\"replace(datafield[@tag='KDN']/subfield[@code='a'], '(\\d{4})(\\d{2})(\\d{2})', '$1-$2-$3')\"/>\n    </xsl:call-template>\n\n    <xsl:call-template name=\"OUTPUT_DATA_TRIPLE\">\n      <xsl:with-param name=\"subject\" select=\"$personIRI\"/>\n      <xsl:with-param name=\"triplequote\" select=\"false()\"/>\n      <xsl:with-param name=\"predicate\">schema:deathDate</xsl:with-param>\n      <xsl:with-param name=\"type\">xsd:date</xsl:with-param>\n      <xsl:with-param name=\"data\" select=\"replace(datafield[@tag='KDU']/subfield[@code='a'], '(\\d{4})(\\d{2})(\\d{2})', '$1-$2-$3')\"/>\n    </xsl:call-template>\n\n    <xsl:call-template name=\"OUTPUT_DATA_TRIPLE\">\n      <xsl:with-param name=\"subject\" select=\"$personIRI\"/>\n      <xsl:with-param name=\"triplequote\" select=\"false()\"/>\n      <xsl:with-param name=\"predicate\">dcterms:subject</xsl:with-param>\n      <xsl:with-param name=\"lang\">cs</xsl:with-param>\n      <xsl:with-param name=\"data\" select=\"datafield[@tag='R06']/subfield[@code='a']\"/>\n    </xsl:call-template>\n    \n    <xsl:if test=\"datafield[@tag='R02']/subfield[@code='m']\">\n      <xsl:call-template name=\"OUTPUT_OBJECT_TRIPLE\">\n        <xsl:with-param name=\"subject\" select=\"$personIRI\"/>\n        <xsl:with-param name=\"predicate\">schema:birthPlace</xsl:with-param>\n        <xsl:with-param name=\"object\" select=\"$placeIRI\"/>\n      </xsl:call-template>\n      <xsl:call-template name=\"OUTPUT_TYPE_TRIPLE\">\n        <xsl:with-param name=\"subject\" select=\"$placeIRI\"/>\n        <xsl:with-param name=\"type\">schema:Place</xsl:with-param>\n      </xsl:call-template>\n      <xsl:call-template name=\"OUTPUT_DATA_TRIPLE\">\n        <xsl:with-param name=\"subject\" select=\"$placeIRI\"/>\n        <xsl:with-param name=\"triplequote\" select=\"false()\"/>\n        <xsl:with-param name=\"predicate\">schema:name</xsl:with-param>\n        <xsl:with-param name=\"lang\">cs</xsl:with-param>\n        <xsl:with-param name=\"data\" select=\"datafield[@tag='R02']/subfield[@code='m']\"/>\n      </xsl:call-template>\n      <xsl:call-template name=\"OUTPUT_DATA_TRIPLE\">\n        <xsl:with-param name=\"subject\" select=\"$placeIRI\"/>\n        <xsl:with-param name=\"triplequote\" select=\"false()\"/>\n        <xsl:with-param name=\"predicate\">schema:containedInPlace</xsl:with-param>\n        <xsl:with-param name=\"lang\">cs</xsl:with-param>\n        <xsl:with-param name=\"data\" select=\"datafield[@tag='R02']/subfield[@code='o']\"/>\n      </xsl:call-template>\n    </xsl:if>\n    \n    <xsl:if test=\"datafield[@tag='R03']/subfield[@code='m']\">\n      <xsl:call-template name=\"OUTPUT_OBJECT_TRIPLE\">\n        <xsl:with-param name=\"subject\" select=\"$personIRI\"/>\n        <xsl:with-param name=\"predicate\">schema:deathPlace</xsl:with-param>\n        <xsl:with-param name=\"object\" select=\"$placeIRI\"/>\n      </xsl:call-template>\n      <xsl:call-template name=\"OUTPUT_TYPE_TRIPLE\">\n        <xsl:with-param name=\"subject\" select=\"$placeIRI\"/>\n        <xsl:with-param name=\"type\">schema:Place</xsl:with-param>\n      </xsl:call-template>\n      <xsl:call-template name=\"OUTPUT_DATA_TRIPLE\">\n        <xsl:with-param name=\"subject\" select=\"$placeIRI\"/>\n        <xsl:with-param name=\"triplequote\" select=\"false()\"/>\n        <xsl:with-param name=\"predicate\">schema:name</xsl:with-param>\n        <xsl:with-param name=\"lang\">cs</xsl:with-param>\n        <xsl:with-param name=\"data\" select=\"datafield[@tag='R03']/subfield[@code='m']\"/>\n      </xsl:call-template>\n      <xsl:call-template name=\"OUTPUT_DATA_TRIPLE\">\n        <xsl:with-param name=\"subject\" select=\"$placeIRI\"/>\n        <xsl:with-param name=\"triplequote\" select=\"false()\"/>\n        <xsl:with-param name=\"predicate\">schema:containedInPlace</xsl:with-param>\n        <xsl:with-param name=\"lang\">cs</xsl:with-param>\n        <xsl:with-param name=\"data\" select=\"datafield[@tag='R02']/subfield[@code='o']\"/>\n      </xsl:call-template>\n    </xsl:if>\n\n    <xsl:call-template name=\"OUTPUT_DATA_TRIPLE\">\n      <xsl:with-param name=\"subject\" select=\"$personIRI\"/>\n      <xsl:with-param name=\"triplequote\" select=\"false()\"/>\n      <xsl:with-param name=\"predicate\">schema:disambiguatingDescription</xsl:with-param>\n      <xsl:with-param name=\"lang\">cs</xsl:with-param>\n      <xsl:with-param name=\"data\" select=\"datafield[@tag='678']/subfield[@code='a']\"/>\n    </xsl:call-template>\n\n    <xsl:call-template name=\"OUTPUT_DATA_TRIPLE\">\n      <xsl:with-param name=\"subject\" select=\"$personIRI\"/>\n      <xsl:with-param name=\"triplequote\" select=\"false()\"/>\n      <xsl:with-param name=\"predicate\">mads:Source</xsl:with-param>\n      <xsl:with-param name=\"lang\">cs</xsl:with-param>\n      <xsl:with-param name=\"data\" select=\"datafield[@tag='670']/subfield[@code='a']\"/>\n    </xsl:call-template>\n\n    <xsl:if test=\"datafield[@tag='100']/subfield[@code='7']\">\n      <xsl:call-template name=\"OUTPUT_DATA_TRIPLE\">\n        <xsl:with-param name=\"subject\" select=\"$personIRI\"/>\n        <xsl:with-param name=\"triplequote\" select=\"false()\"/>\n        <xsl:with-param name=\"predicate\">mads:isIdentifiedByAutority</xsl:with-param>\n        <xsl:with-param name=\"data\" select=\"concat('https://viaf.org/viaf/sourceID/NKC|',datafield[@tag='100']/subfield[@code='7'],'#skos:Concept')\"/>\n      </xsl:call-template>\n    </xsl:if>\n\n  </xsl:template>\n  <!--#################################################################### SUPPORT TEMPLATES ###################################################################################-->\n  <xsl:template name=\"OUTPUT_IDENTIFIER\">\n    <xsl:param name=\"conceptURI\"/>\n    <xsl:param name=\"conceptURI_NUI\"/>\n    <xsl:param name=\"notation\"/>\n    <xsl:param name=\"agencyName\"/>\n    <xsl:param name=\"agencyURI\"/>\n    <xsl:param name=\"schemeName\"/>\n    <xsl:param name=\"schemeURI\"/>\n    <!--<xsl:variable name=\"identifierURI\" select=\"concat($conceptURI, '/identifier/', lower-case($schemeName), '/', $notation[1])\"/>-->\n    <xsl:variable name=\"identifierURI_NUI\" select=\"concat($conceptURI_NUI, '/identifier/', lower-case($schemeName), '/', $notation[1])\"/>\n    <!--\n    <xsl:call-template name=\"OUTPUT_SAME_AS_TRIPLE\">\n      <xsl:with-param name=\"subject\" select=\"$identifierURI\" />\n      <xsl:with-param name=\"object\" select=\"$identifierURI_NUI\" />\n    </xsl:call-template>\n-->\n    <xsl:call-template name=\"OUTPUT_OBJECT_TRIPLE\">\n      <xsl:with-param name=\"subject\" select=\"$conceptURI\"/>\n      <xsl:with-param name=\"predicate\">adms:identifier</xsl:with-param>\n      <xsl:with-param name=\"object\" select=\"$identifierURI_NUI\"/>\n    </xsl:call-template>\n    <xsl:call-template name=\"OUTPUT_TYPE_TRIPLE\">\n      <xsl:with-param name=\"subject\" select=\"$identifierURI_NUI\"/>\n      <xsl:with-param name=\"type\">adms:Identifier</xsl:with-param>\n    </xsl:call-template>\n    <xsl:call-template name=\"OUTPUT_DATA_TRIPLE\">\n      <xsl:with-param name=\"subject\" select=\"$identifierURI_NUI\"/>\n      <xsl:with-param name=\"predicate\">skos:notation</xsl:with-param>\n      <xsl:with-param name=\"data\" select=\"$notation\"/>\n    </xsl:call-template>\n    <xsl:call-template name=\"OUTPUT_DATA_TRIPLE\">\n      <xsl:with-param name=\"subject\" select=\"$identifierURI_NUI\"/>\n      <xsl:with-param name=\"predicate\">adms:schemeAgency</xsl:with-param>\n      <xsl:with-param name=\"data\" select=\"$agencyName\"/>\n    </xsl:call-template>\n    <xsl:call-template name=\"OUTPUT_OBJECT_TRIPLE\">\n      <xsl:with-param name=\"subject\" select=\"$identifierURI_NUI\"/>\n      <xsl:with-param name=\"predicate\">dcterms:creator</xsl:with-param>\n      <xsl:with-param name=\"object\" select=\"$agencyURI\"/>\n    </xsl:call-template>\n    <xsl:call-template name=\"OUTPUT_OBJECT_TRIPLE\">\n      <xsl:with-param name=\"subject\" select=\"$identifierURI_NUI\"/>\n      <xsl:with-param name=\"predicate\">dcterms:type</xsl:with-param>\n      <xsl:with-param name=\"object\" select=\"$schemeURI\"/>\n    </xsl:call-template>\n  </xsl:template>\n  <xsl:template name=\"OUTPUT_OBJECT_TRIPLE\">\n    <xsl:param name=\"subject\"/>\n    <xsl:param name=\"predicate\"/>\n    <xsl:param name=\"object\"/>\n    <xsl:if test=\"$object\">\n      <xsl:text>&lt;</xsl:text>\n      <xsl:value-of select=\"$subject\"/>\n      <xsl:text>&gt; </xsl:text>\n      <xsl:value-of select=\"$predicate\"/>\n      <xsl:text> &lt;</xsl:text>\n      <xsl:value-of select=\"$object\"/>\n      <xsl:text>&gt; .\n</xsl:text>\n    </xsl:if>\n  </xsl:template>\n  <xsl:template name=\"OUTPUT_OBJECT_CURIE_TRIPLE\">\n    <xsl:param name=\"subject\"/>\n    <xsl:param name=\"predicate\"/>\n    <xsl:param name=\"object\"/>\n    <xsl:if test=\"$object\">\n      <xsl:value-of select=\"$subject\"/>\n      <xsl:text> </xsl:text>\n      <xsl:value-of select=\"$predicate\"/>\n      <xsl:text> </xsl:text>\n      <xsl:value-of select=\"$object\"/>\n      <xsl:text> .\n</xsl:text>\n    </xsl:if>\n  </xsl:template>\n  <xsl:template name=\"OUTPUT_TYPE_TRIPLE\">\n    <xsl:param name=\"subject\"/>\n    <xsl:param name=\"type\"/>\n    <xsl:text>&lt;</xsl:text>\n    <xsl:value-of select=\"$subject\"/>\n    <xsl:text>&gt; a </xsl:text>\n    <xsl:value-of select=\"$type\"/>\n    <xsl:text> .\n</xsl:text>\n  </xsl:template>\n  <xsl:template name=\"OUTPUT_TYPE_CURIE_TRIPLE\">\n    <xsl:param name=\"subject\"/>\n    <xsl:param name=\"type\"/>\n    <xsl:value-of select=\"$subject\"/>\n    <xsl:text> a </xsl:text>\n    <xsl:value-of select=\"$type\"/>\n    <xsl:text> .\n</xsl:text>\n  </xsl:template>\n  <xsl:template name=\"OUTPUT_SAME_AS_TRIPLE\">\n    <xsl:param name=\"subject\"/>\n    <xsl:param name=\"object\"/>\n    <xsl:text>&lt;</xsl:text>\n    <xsl:value-of select=\"$subject\"/>\n    <xsl:text>&gt; owl:sameAs </xsl:text>\n    <xsl:text>&lt;</xsl:text>\n    <xsl:value-of select=\"$object\"/>\n    <xsl:text>&gt; .\n</xsl:text>\n  </xsl:template>\n  <xsl:template name=\"OUTPUT_DATA_TRIPLE\">\n    <xsl:param name=\"subject\"/>\n    <xsl:param name=\"predicate\"/>\n    <xsl:param name=\"data\"/>\n    <xsl:param name=\"type\"/>\n    <xsl:param name=\"lang\"/>\n    <xsl:param name=\"triplequote\"/>\n    <xsl:for-each select=\"$data\">\n      <xsl:variable name=\"data-item\" select=\"replace(replace(replace(., '\\\\', '\\\\\\\\'), '&quot;', '\\\\&quot;'),'\\n', ' ')\"/>\n      <xsl:if test=\"string-length($data-item) &gt; 0\">\n        <xsl:text>&lt;</xsl:text>\n        <xsl:value-of select=\"$subject\"/>\n        <xsl:text>&gt; </xsl:text>\n        <xsl:value-of select=\"$predicate\"/>\n        <xsl:if test=\"$triplequote=true()\">\n          <xsl:text> \"\"\"</xsl:text>\n        </xsl:if>\n        <xsl:if test=\"$triplequote=false()\">\n          <xsl:text> \"</xsl:text>\n        </xsl:if>\n        <xsl:value-of select=\"$data-item\"/>\n        <xsl:if test=\"$triplequote=true()\">\n          <xsl:text>\"\"\"</xsl:text>\n        </xsl:if>\n        <xsl:if test=\"$triplequote=false()\">\n          <xsl:text>\"</xsl:text>\n        </xsl:if>\n        <xsl:choose>\n          <xsl:when test=\"$lang\">\n            <xsl:text>@</xsl:text>\n            <xsl:value-of select=\"$lang\"/>\n          </xsl:when>\n          <xsl:otherwise>\n            <xsl:if test=\"$type\">\n              <xsl:text>^^</xsl:text>\n              <xsl:value-of select=\"$type\"/>\n            </xsl:if>\n          </xsl:otherwise>\n        </xsl:choose>\n        <xsl:text> .\n</xsl:text>\n      </xsl:if>\n    </xsl:for-each>\n  </xsl:template>\n  <xsl:template name=\"OUTPUT_DATA_CURIE_TRIPLE\">\n    <xsl:param name=\"subject\"/>\n    <xsl:param name=\"predicate\"/>\n    <xsl:param name=\"data\"/>\n    <xsl:param name=\"type\"/>\n    <xsl:param name=\"lang\"/>\n    <xsl:param name=\"triplequote\"/>\n    <xsl:for-each select=\"$data\">\n      <xsl:variable name=\"data-item\" select=\"replace(replace(replace(., '\\\\', '\\\\\\\\'), '&quot;', '\\\\&quot;'),'\\n', ' ')\"/>\n      <xsl:if test=\"string-length($data-item) &gt; 0\">\n        <xsl:value-of select=\"$subject\"/>\n        <xsl:text> </xsl:text>\n        <xsl:value-of select=\"$predicate\"/>\n        <xsl:if test=\"$triplequote=true()\">\n          <xsl:text> \"\"\"</xsl:text>\n        </xsl:if>\n        <xsl:if test=\"$triplequote=false()\">\n          <xsl:text> \"</xsl:text>\n        </xsl:if>\n        <xsl:value-of select=\"$data-item\"/>\n        <xsl:if test=\"$triplequote=true()\">\n          <xsl:text>\"\"\"</xsl:text>\n        </xsl:if>\n        <xsl:if test=\"$triplequote=false()\">\n          <xsl:text>\"</xsl:text>\n        </xsl:if>\n        <xsl:choose>\n          <xsl:when test=\"$lang\">\n            <xsl:text>@</xsl:text>\n            <xsl:value-of select=\"$lang\"/>\n          </xsl:when>\n          <xsl:otherwise>\n            <xsl:if test=\"$type\">\n              <xsl:text>^^</xsl:text>\n              <xsl:value-of select=\"$type\"/>\n            </xsl:if>\n          </xsl:otherwise>\n        </xsl:choose>\n        <xsl:text> .\n</xsl:text>\n      </xsl:if>\n    </xsl:for-each>\n  </xsl:template>\n  <xsl:template name=\"OUTPUT_BOOL_CURIE_TRIPLE\">\n    <xsl:param name=\"subject\"/>\n    <xsl:param name=\"predicate\"/>\n    <xsl:param name=\"data\"/>\n    <xsl:for-each select=\"$data\">\n      <xsl:variable name=\"data-item\" select=\"replace(replace(replace(., '\\\\', '\\\\\\\\'), '&quot;', '\\\\&quot;'),'\\n', ' ')\"/>\n      <xsl:if test=\"string-length($data-item) &gt; 0\">\n        <xsl:value-of select=\"$subject\"/>\n        <xsl:text> </xsl:text>\n        <xsl:value-of select=\"$predicate\"/>\n        <xsl:text> </xsl:text>\n        <xsl:value-of select=\"$data-item\"/>\n        <xsl:text> .\n</xsl:text>\n      </xsl:if>\n    </xsl:for-each>\n  </xsl:template>\n  <xsl:template match=\"*|@*\"/>\n</xsl:stylesheet>"
+          }
+        ],
+        "http://plugins.linkedpipes.com/ontology/t-xslt#templateControl": [
+          {
+            "@id": "http://plugins.linkedpipes.com/resource/configuration/None"
+          }
+        ],
+        "http://plugins.linkedpipes.com/ontology/t-xslt#threads": [
+          {
+            "@type": "http://www.w3.org/2001/XMLSchema#integer",
+            "@value": "1"
+          }
+        ],
+        "http://plugins.linkedpipes.com/ontology/t-xslt#threadsControl": [
+          {
+            "@id": "http://plugins.linkedpipes.com/resource/configuration/None"
+          }
+        ]
+      }
+    ],
+    "@id": "http://localhost:8080/resources/pipelines/1583177178573/graph/15"
   }
 ]
